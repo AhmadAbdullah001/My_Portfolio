@@ -2,7 +2,7 @@ import About from "./assets/components/About";
 import Contact from "./assets/components/Contact";
 import Footer from "./assets/components/Footer";
 import HeroSection from "./assets/components/HeroSection";
-import Navbar from "./assets/components/navbar";
+import Navbar from "./assets/components/Navbar";
 import Projects from "./assets/components/Projects";
 import Services from "./assets/components/Services";
 import Skills from "./assets/components/Skills";
