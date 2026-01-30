@@ -17,7 +17,10 @@ export default function Contact() {
         {/* Heading */}
         <div className="text-center mb-20">
 
-          <h2 className="text-4xl md:text-5xl font-bold" style={{overflowY:"hidden"}}>
+          <h2
+            className="text-4xl md:text-5xl font-bold"
+            style={{ overflowY: "hidden" }}
+          >
             Get In <span className="text-green-400">Touch</span>
           </h2>
 
@@ -72,13 +75,12 @@ export default function Contact() {
 
             {/* Resume Button */}
             <a
-              href="/resume.pdf"
+              href="/AhmadAbdullahHashmiResume.pdf"
               download
               className="
                 flex items-center justify-center gap-2
                 bg-green-400 text-black
                 py-3 rounded-xl font-medium
-
                 hover:bg-green-500
                 transition
               "
@@ -98,7 +100,12 @@ export default function Contact() {
             "
           >
 
-            <form className="space-y-6">
+            {/* 🔥 FORM WITH FORMSPREE */}
+            <form
+              action="https://formspree.io/f/mojwyegb"
+              method="POST"
+              className="space-y-6"
+            >
 
               {/* Name */}
               <div>
@@ -108,8 +115,10 @@ export default function Contact() {
 
                 <input
                   type="text"
+                  name="name"
                   placeholder="John Doe"
                   className="input-style"
+                  required
                 />
               </div>
 
@@ -121,8 +130,10 @@ export default function Contact() {
 
                 <input
                   type="email"
+                  name="email"
                   placeholder="john@example.com"
                   className="input-style"
+                  required
                 />
               </div>
 
@@ -133,9 +144,11 @@ export default function Contact() {
                 </label>
 
                 <textarea
+                  name="message"
                   rows="4"
                   placeholder="Tell me about your project..."
                   className="input-style resize-none"
+                  required
                 ></textarea>
               </div>
 
@@ -146,7 +159,6 @@ export default function Contact() {
                   w-full flex items-center justify-center gap-2
                   bg-green-400 text-black py-3 rounded-xl
                   font-medium
-
                   hover:bg-green-500
                   transition
                 "
@@ -187,23 +199,23 @@ export default function Contact() {
   );
 }
 
+
 /* Info Card */
 function InfoCard({ icon, title, value, link }) {
   return (
     <a
       href={link}
       target="_blank"
+      rel="noreferrer"
       className="
         flex items-center gap-4
         bg-white/5 backdrop-blur-md
         border border-white/10
         rounded-xl p-4
-
         hover:bg-white/10
         hover:border-green-400/30
         hover:shadow-lg
         hover:shadow-green-400/10
-
         transition
       "
     >

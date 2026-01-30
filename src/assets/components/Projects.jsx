@@ -35,8 +35,8 @@ export default function Projects() {
               "Admin dashboard",
             ]}
             tech={["React", "Node.js", "Express.js", "MongoDB"]}
-            github="#"
-            live="#"
+            github="https://github.com/AhmadAbdullah001/Smart-Complaint-Management-System"
+            live="https://smart-complaint-management-system-ten.vercel.app/"
           />
 
           {/* Project 2 */}
@@ -50,8 +50,8 @@ export default function Projects() {
               "Payment integration ready",
             ]}
             tech={["React", "Node.js", "Express.js", "MongoDB"]}
-            github="#"
-            live="#"
+            github="https://github.com/AhmadAbdullah001/Ecom2"
+            live="https://ecommerce-053g.onrender.com/"
           />
 
         </div>
